@@ -1,4 +1,7 @@
-<script lang="ts"></script>
+<script setup lang="ts">
+const { data } = await useFetch("/api/posts");
+console.log(data.value);
+</script>
 
 <template>
   <div></div>
