@@ -1,3 +1,9 @@
+<script lang="ts" setup>
+import { state as postsStore } from "./store/posts";
+
+onMounted(() => {});
+</script>
+
 <template>
   <header>
     <button><NuxtLink to="/">Main Page</NuxtLink></button>
@@ -31,5 +37,11 @@ header {
   display: flex;
   align-items: center;
   padding: 10px;
+
+  button {
+    margin-inline-start: 5px;
+    text-decoration: none;
+    color: black;
+  }
 }
 </style>
